@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShogenaiDay - お問い合わせ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+  function onSubmitForm() {
+    // フォーム送信後にサンクスページにリダイレクト
+    setTimeout(function() {
+      window.location.href = "contact-form-thanks.html";
+    }, 1000); // 1秒後にリダイレクト（送信後少し待つ）
+  }
+</script>
+
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"></iframe>
+
+<div class="privacy-container">
+  <h1 class="privacy-h1">お問い合わせ</h1>
+
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBHDcILpxEFdm8dJMGJ_4WYTLaiGIk0yuTEwGdqsKnuthr6A/formResponse"
+        method="POST" target="hidden_iframe" onsubmit="onSubmitForm(); return true;" class="contact-form">
+    
+    <section class="privacy-card">
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-name">お名前<span class="c-form__required">必須</span></label>
+        <input name="entry.2025635171" class="c-form__input" id="field-name" placeholder="サンプル 太郎" type="text" required="required" />
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
+        <input name="entry.161673264" class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="email" required="required" />
+      </div>
+    </section>
+
+    <section class="privacy-card">
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-message">メッセージ内容</label>
+        <textarea name="entry.1538415746" class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
+      </div>
+    </section>
+
+    <div class="c-form__submit">
+      <button type="submit">送信する</button>
+    </div>
+  </form>
+
+  <button class="privacy-back-button" 
+  onclick="window.location.href='index.html'">戻る</button>
+</div>
+
+</html>
