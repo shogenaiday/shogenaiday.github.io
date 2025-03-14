@@ -1,0 +1,273 @@
+/* ============================
+   ✅ ベーススタイル
+=============================== */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh; /* 画面の高さが足りない場合に足りなくならないように */
+}
+
+/* ============================
+   ✅ ヘッダーのスタイル
+=============================== */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 15px;
+}
+
+/* ============================
+   ✅ メインコンテンツ
+=============================== */
+main {
+  margin-top: 80px;
+}
+
+/* ============================
+   ✅ カテゴリボタンのスタイル
+=============================== */
+.category-btn {
+  border-color: #007bff;
+  color: #007bff;
+  transition: all 0.3s;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.category-btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  font-weight: bold;
+}
+
+.category-btn:hover {
+  background-color: #e9f5ff;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* ============================
+   ✅ カードのスタイル
+=============================== */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #777;
+}
+
+/* ============================
+   ✅ フッターのデザイン
+=============================== */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* ============================
+   ✅ プライバシーポリシーやフォーム関連のスタイル
+=============================== */
+
+.privacy-container,
+.contact-form {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-h1,
+.contact-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.privacy-card,
+.contact-form .c-form__item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.privacy-h2,
+.contact-form .c-form__label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.privacy-p,
+.contact-form .c-form__input,
+.contact-form textarea {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* フォームの入力欄 */
+.contact-form .c-form__input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+.contact-form .c-form__input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 戻るボタン */
+.privacy-back-button,
+.contact-form .c-form__back .back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.privacy-back-button:hover,
+.contact-form .c-form__back .back-button:hover {
+  background-color: #0056b3;
+}
+
+/* ============================
+   ✅ レスポンシブ対応
+=============================== */
+@media (max-width: 768px) {
+  .privacy-container,
+  .contact-form {
+    padding: 15px;
+  }
+
+  .privacy-h1,
+  .contact-form h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-h2,
+  .contact-form .c-form__label {
+    font-size: 1.3rem;
+  }
+
+  .privacy-p,
+  .contact-form .c-form__input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .privacy-back-button,
+  .contact-form .c-form__back .back-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .privacy-container,
+  .contact-form {
+    padding: 10px;
+  }
+
+  .privacy-h1,
+  .contact-form h1 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-h2,
+  .contact-form .c-form__label {
+    font-size: 1.2rem;
+  }
+
+  .privacy-p,
+  .contact-form .c-form__input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .privacy-back-button,
+  .contact-form .c-form__back .back-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  .c-form__required {
+    background-color: #ff4d4d; /* 赤い背景 */
+    color: white; /* 文字は白 */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 3px 8px; /* 内側にスペースを追加 */
+    border-radius: 5px; /* 丸みを帯びた角 */
+    margin-left: 8px; /* ラベルと「必須」の間にスペースを追加 */
+  }
+  .c-form__submit {
+    text-align: center; /* ボタンを中央に配置 */
+    margin-top: 20px; /* 上部に少し余白 */
+  }
+  
+}
