@@ -26,5 +26,12 @@
     "image": "assets/images/blog_whiteday.png",
     "link": "articles/blog_whiteday.html",
     "category": "blog"
+  },
+  {
+    "title": "【日常】頑張れない時に読んでほしい—心が軽くなる考え方",
+    "date": "2025年3月17日",
+    "image": "assets/images/blog_250317.png",
+    "link": "articles/blog_250317.html",
+    "category": "blog"
   }
 ]
