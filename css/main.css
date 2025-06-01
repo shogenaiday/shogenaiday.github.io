@@ -272,7 +272,7 @@ footer a:hover {
   .image {
     max-width: 100%;
     height: auto;
-    width: 300px; /* 必要に応じて調整可能 */
+    width: 80px; /* 必要に応じて調整可能 */
     display: block;
     margin: 0 auto 2rem;
   }
