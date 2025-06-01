@@ -269,5 +269,12 @@ footer a:hover {
     text-align: center; /* ボタンを中央に配置 */
     margin-top: 20px; /* 上部に少し余白 */
   }
-  
+  .image {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* 必要に応じて調整可能 */
+    display: block;
+    margin: 0 auto 2rem;
+  }
+   
 }
