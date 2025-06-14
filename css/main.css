@@ -121,6 +121,7 @@ footer a:hover {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
 }
 
 .privacy-h1,
@@ -130,6 +131,9 @@ footer a:hover {
   font-weight: bold;
   color: #007bff;
   margin-bottom: 30px;
+  border: 5px dashed #aaa;
+    padding: 2em;
+    border-radius: 15px;
 }
 
 .privacy-card,
@@ -146,6 +150,11 @@ footer a:hover {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #007bff;
+  
+}
+
+.privacy-h2{
+border-bottom: 1px double #19087b;
 }
 
 .privacy-p,
@@ -154,7 +163,18 @@ footer a:hover {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+  
 }
+
+.c-form__required {
+    background-color: #ff4d4d; /* 赤い背景 */
+    color: white; /* 文字は白 */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 3px 8px; /* 内側にスペースを追加 */
+    border-radius: 5px; /* 丸みを帯びた角 */
+    margin-left: 8px; /* ラベルと「必須」の間にスペースを追加 */
+  }
 
 /* フォームの入力欄 */
 .contact-form .c-form__input,
@@ -166,6 +186,7 @@ footer a:hover {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 8px;
+  resize: none;
 }
 
 .contact-form .c-form__input:focus,
@@ -186,15 +207,39 @@ footer a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 30px;
+  margin: 30px auto 0;
   display: block;
-  width: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+/* お問い合わせページ戻るボタン */
+
+.contact-back-button
+{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 30px 0 0;
+  display: block;
+  width: 20%;
   text-align: center;
 }
 
 .privacy-back-button:hover,
 .contact-form .c-form__back .back-button:hover {
   background-color: #0056b3;
+}
+
+.profile-image {
+  display: block;
+  margin: 0 auto;
 }
 
 /* ============================
@@ -209,6 +254,9 @@ footer a:hover {
   .privacy-h1,
   .contact-form h1 {
     font-size: 1.8rem;
+    border: 5px dashed #aaa;
+    padding: 2em;
+    border-radius: 15px;
   }
 
   .privacy-h2,
@@ -252,7 +300,9 @@ footer a:hover {
   }
 
   .privacy-back-button,
-  .contact-form .c-form__back .back-button {
+  .contact-form .c-form__back .back-button,
+  .c-form__submit
+   {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
@@ -269,12 +319,16 @@ footer a:hover {
     text-align: center; /* ボタンを中央に配置 */
     margin-top: 20px; /* 上部に少し余白 */
   }
-  .image {
-    max-width: 100%;
-    height: auto;
-    width: 80px; /* 必要に応じて調整可能 */
-    display: block;
-    margin: 0 auto 2rem;
+
+  @media (max-width: 576px) {
+  .contact-back-button {
+    width: 20%;              
+    min-width: 85px;        
+    text-align: center;
+    margin: 20px 0 0;      
+    white-space: nowrap;      
+    font-size: 0.9rem;       
+    padding: 10px 20px;      
   }
-   
-}
+  
+  }}

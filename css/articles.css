@@ -35,7 +35,7 @@ h3 {
 /* 目次 */
 ol {
     background: white;
-    padding: 10px 15px; /* 左右の余白を増やして、枠内に収める */
+    padding: 5px 10px; /* 左右の余白を増やして、枠内に収める */
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
@@ -49,7 +49,7 @@ ol li {
 
 a {
     text-decoration: none; /* 下線を消す */
-    color: inherit; /* 親要素の文字色を引き継ぐ */
+    color: #2c0fbe;
     cursor: pointer; /* カーソルをリンクっぽくする */
     transition: all 0.3s ease; /* アニメーションのスムーズな変化 */
   }
@@ -72,23 +72,16 @@ p, ul {
     padding: 0 25px;
     max-width: 700px;
     margin: 0 auto;
+    line-height: 1.8; 
 }
 
 /* 画像 */
 img {
     display: block;
-    max-width: 90%;
-    height: auto;
-    margin: 15px auto;
+    margin: 30px auto;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* 画像をデスクトップで小さめに */
-@media screen and (min-width: 768px) {
-    img {
-        max-width: 60%;
-    }
+    width: 500px;
 }
 
 /* ボタン */
@@ -140,5 +133,16 @@ button:hover {
     button {
         font-size: 0.9rem;
         padding: 10px;
+    }
+
+    pre {
+        background: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-family: monospace;
+    }
+    img {
+        width: 300px;;
     }
 }
