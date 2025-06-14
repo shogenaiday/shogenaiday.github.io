@@ -1,30 +1,31 @@
 [
   {
-    "title": "【資格】1ヶ月で基本情報技術者試験合格",
+    "title": "【資格】基本情報技術者試験 合格までの道のり",
     "date": "2025年3月8日",
     "image": "assets/images/fe1_skill.png",
     "link": "articles/fe1_skill.html",
     "category": "fe"
   },
   {
-    "title": "【悲報】びわ湖マラソン2025完走ならず",
-    "date": "2025年3月9日",
-    "image": "assets/images/blog2.png",
-    "link": "articles/blog_biwako_marathon.html",
-    "category": "blog"
+    "title": "【資格】基本情報技術者試験 情報の表現",
+    "date": "2025年6月13日",
+    "image": "assets/images/fe2_skill.png",
+    "link": "articles/fe2_skill.html",
+    "category": "fe"
   },
   {
-    "title": "【再訪】小さな焼き菓子店「oven」",
-    "date": "2025年3月14日",
-    "image": "assets/images/blog_whiteday.png",
-    "link": "articles/blog_whiteday.html",
-    "category": "blog"
-  },
+    "title": "【資格】基本情報技術者試験 コンピュータの構成",
+    "date": "2025年6月14日",
+    "image": "assets/images/fe3_skill.png",
+    "link": "articles/fe3_skill.html",
+    "category": "fe"
+  }
+  ,
   {
-    "title": "【日常】頑張れない時に読んでほしい—心が軽くなる考え方",
-    "date": "2025年3月17日",
-    "image": "assets/images/blog_250317.png",
-    "link": "articles/blog_250317.html",
-    "category": "blog"
+    "title": "【資格】基本情報技術者試験 CPUの仕組み",
+    "date": "2025年6月14日",
+    "image": "assets/images/fe4_skill.png",
+    "link": "articles/fe4_skill.html",
+    "category": "fe"
   }
 ]
